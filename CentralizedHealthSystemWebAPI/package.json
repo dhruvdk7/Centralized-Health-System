@@ -1,0 +1,33 @@
+{
+    "name": "centralizedhealthsystemwebapi",
+    "version": "1.0.0",
+    "description": "WebAPI for Centralized Health System",
+    "main": "server.js",
+    "scripts": {
+        "test": "mocha app/components/**/*.test.js --timeout 5000 --exit mocha app/test/*.test.js --timeout 5000 --exit",
+        "coverage": "nyc --reporter=lcov --report-dir=./coverage mocha app/components/**/*.test.js --timeout 5000 --exit mocha app/test/*.test.js --timeout 5000 --exit"
+    },
+    "author": "group_18",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.1",
+        "chai": "^4.3.7",
+        "chai-http": "^4.3.0",
+        "cors": "^2.8.5",
+        "crypto": "^1.0.1",
+        "dotenv": "^16.0.3",
+        "dotenv-safe": "^8.2.0",
+        "express": "^4.18.2",
+        "express-jwt": "^8.4.1",
+        "express-validation": "^4.1.0",
+        "joi": "^17.8.1",
+        "jsonwebtoken": "^9.0.0",
+        "mocha": "^10.2.0",
+        "mysql2": "^3.1.2",
+        "nodemailer": "^6.9.1",
+        "nyc": "^15.1.0",
+        "sinon": "^15.0.3",
+        "swagger-jsdoc": "^6.2.8",
+        "swagger-ui-express": "^4.6.2"
+    }
+}

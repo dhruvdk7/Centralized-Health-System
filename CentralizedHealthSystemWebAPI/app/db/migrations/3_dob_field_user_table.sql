@@ -1,0 +1,7 @@
+-- migrate:up
+
+ALTER TABLE `CSCI5308_18_DEVINT`.`Users` ADD DOB DATE;
+
+-- migrate:down
+
+ALTER TABLE `CSCI5308_18_DEVINT`.`Users` DROP COLUMN IF EXISTS DOB;
